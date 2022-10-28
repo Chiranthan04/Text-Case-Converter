@@ -12,12 +12,12 @@
     <h1>Text Converter</h1>
     <div>
       <p>
-        <label for="nameinput"> Enter the text : </label>
-        <input type="text" id="nameinput" />
+        <label for="textinput"> Enter the text : </label>
+        <input type="text" id="textinput" />
       </p>
 
       <button id="upper" onclick="touppercase()">UpperCase</button>
-      <button id="upper" onclick="tolowercase()">LowerCase</button>
+      <button id="lower" onclick="tolowercase()">LowerCase</button>
 
       <p id="result"></p>
       <!-- <p>
@@ -31,16 +31,16 @@
   </body>
   <script>
     function touppercase() {
-      let txt = document.getElementById("nameinput").value;
+      let txt = document.getElementById("textinput").value;
       let uptxt = txt.toUpperCase();
       document.getElementById("result").innerHTML =
         "The text in Upper case: " + uptxt;
     }
     function tolowercase() {
-      let txt = document.getElementById("nameinput").value;
-      let uptxt = txt.toLowerCase();
+      let txt = document.getElementById("textinput").value;
+      let lowtxt = txt.toLowerCase();
       document.getElementById("result").innerHTML =
-        "The text in Lower case: " + uptxt;
+        "The text in Lower case: " + lowtxt;
     }
   </script>
 
